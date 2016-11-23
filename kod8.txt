@@ -1,0 +1,33 @@
+#include<iostream.h>
+
+main()
+{
+int l1,l2,rodzaj;
+
+
+cout<<"Podaj liczbe 1 : ";
+cin>>l1;
+
+cout<<"Podaj liczbe 2 : ";
+cin>>l2;
+endl;
+endl;
+endl;
+
+
+cout<<"Wybierz Rodzaj dzialania : [1] - dodawanie"<<endl;
+cout<<"                         : [2] - odejmowanie"<<endl;
+cout<<"                         : [3] - mnozenie"<<endl;
+cout<<"                         : [4] - dzielenie"<<endl;
+cout<<"WYBOR :";
+cin>>rodzaj;
+
+switch (rodzaj)
+{
+case 1:{cout<<"SUMA LICZB WYNOSI : "<<l1+l2;break;};
+case 2:{cout<<"ROZNICA WYNOSI    : "<<l1-l2;break;};
+case 3:{cout<<"ILOCZYN WYNOSI    : "<<l1*l2;break;};
+case 4:{cout<<"ILORAZ WYNOSI     : "<<l1/l2;break;};
+}
+
+}
