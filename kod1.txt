@@ -1,22 +1,21 @@
-program fibonacci;
-var
-  i, liczba: word;
-  a, b, c: longint;
-begin
-  writeln('Podaj, ktora liczbe z ciagu Fibonacciego chcesz zobaczyc: ');
-  readln(liczba);
-  a := 1;
-  b := 1;
-  if liczba <= 2 then 
-    writeln('Wynik: ', a)
-  else 
-  begin
-    for i := 3 to liczba do 
-    begin
-      c := a+b;
-      a := b;
-      b := c;
-    end;
-    writeln('Wynik: ', c);
-  end;
-end.
+#include<iostream.h>
+#include<conio.h>
+
+main()
+{
+const int a=10;   //ilosc liczb do podania
+
+int ilosc=0,liczba;
+for (int i=0;i<a;i++)
+  {
+  cout<<"Podaj liczbe "<<i+1<<"    : ";
+  cin>>liczba;
+  if (liczba%2==0) {ilosc++;};
+  }
+cout<<endl;
+cout<<"Liczb parzystych jest : "<<ilosc;
+
+
+
+getch();
+}
