@@ -5,7 +5,7 @@
 
 int pierwsza(int liczba)
  {
-int licznik,wynik=1;
+int licznik,wynik=1;sdfdsfsdfsdfsdf
 liczba=abs(liczba); //modul liczby
 
 if (liczba!=2) {
