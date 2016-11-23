@@ -1,0 +1,37 @@
+#include<iostream.h>
+#include<stdio.h>
+#include<string.h>
+
+
+main()
+{
+const int a=255;  // dlugosc zdania
+const int b=15;   // dlugosc wyrazu
+
+
+char napis[a];
+cout<<"Wpisz jakies max "<<a<<" literowe zdanie !!"<<endl;
+cout<<" : ";
+gets(napis);
+
+char wyraz[b];
+cout<<"Wpisz max "<<b<<" literowy wyraz do szukania w zdaniu :";
+gets(wyraz);
+
+int jest;//zmienna pomocnicza - czy znaleziono?
+int ilosc=0;//ile znaleziono
+
+for (int i=0;i<strlen(napis);i++)
+	 {
+	 if (napis[i]==wyraz[0])
+		 {
+		 jest=1;
+		 for (int j=0;j<strlen(wyraz);j++)
+			  {
+			  if (napis[i+j]!=wyraz[j]){jest=0;}
+			  }
+		 if (jest==1){ilosc++;}
+		 }
+	 }
+cout<<"Wyrazow "<<wyraz<<" w zdaniu znaleziono : "<<ilosc;
+}
