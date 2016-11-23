@@ -4,7 +4,7 @@
 
 
 main()
-{
+{srdtfgrstfghrsxftgzsdrgft
 const int a=255;  // dlugosc zdania
 const int b=15;   // dlugosc wyrazu
 
